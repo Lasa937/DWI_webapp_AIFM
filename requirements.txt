@@ -1,3 +1,7 @@
 streamlit
-simpleitk
+numpy
+pandas
+matplotlib
+SimpleITK
+scikit-image
 reportlab
