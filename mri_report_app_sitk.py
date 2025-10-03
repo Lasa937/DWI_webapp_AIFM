@@ -7,8 +7,6 @@ import tempfile
 from pathlib import Path
 from datetime import datetime
 
-from flask import Flask, request, redirect, url_for, render_template_string, send_from_directory, abort
-from werkzeug.utils import secure_filename
 
 import numpy as np
 import SimpleITK as sitk
@@ -24,7 +22,6 @@ from io import BytesIO
 ###############################################
 # App config
 ###############################################
-app = Flask(__name__)
 BASE_DIR = Path(__file__).resolve().parent
 RUNS_DIR = BASE_DIR / 'runs'
 RUNS_DIR.mkdir(exist_ok=True)
